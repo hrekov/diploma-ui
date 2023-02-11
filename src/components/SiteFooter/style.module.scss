@@ -1,0 +1,16 @@
+.footer {
+  width: 100%;
+  background-color: var(--secondary-color);
+  min-height: 150px;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 10px 0;
+}
+
+.creator {
+  width: 100%;
+  color: white;
+  font-weight: lighter;
+  font-size: 1rem;
+  text-align: center;
+}
