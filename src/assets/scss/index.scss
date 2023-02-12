@@ -6,11 +6,13 @@
   box-sizing: border-box;
 }
 
-#root {
+body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  color: var(--text-color);
+}
+
+.container {
+  padding: 0 15px;
 }

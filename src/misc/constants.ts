@@ -1,7 +1,5 @@
-const routing = {
+export const route = {
   ROOT: '/',
   RECOGNIZER: '/recognizer',
   FAQ: '/faq',
 }
-
-export default routing;

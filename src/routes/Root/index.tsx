@@ -6,7 +6,7 @@ import css from './style.module.scss';
 
 function Root() {
   return (
-    <>
+    <div className={css.wrapper}>
       <SiteHeader />
 
       <div className={css.content}>
@@ -14,7 +14,7 @@ function Root() {
       </div>
 
       <SiteFooter className={css.footer} />
-    </>
+    </div>
   );
 }
 

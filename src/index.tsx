@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';import reportWebVitals from './reportWeb
 import './assets/scss/index.scss';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from './routes/Root';
+import Recognizer from './routes/Recognizer';
+import FAQ from './routes/FAQ';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -12,6 +14,16 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Root />,
+    children: [
+      {
+        path: '/recognizer',
+        element: <Recognizer />,
+      },
+      {
+        path: '/faq',
+        element: <FAQ />,
+      }
+    ],
   },
 ]);
 

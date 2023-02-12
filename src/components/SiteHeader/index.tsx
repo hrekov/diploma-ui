@@ -1,20 +1,20 @@
 import React from 'react';
 import css from './style.module.scss';
 import { Link, useLocation } from 'react-router-dom';
-import routing from '../../misc/routing';
+import { route } from '../../misc/constants';
 import UserAvatar from '../UserAvatar';
 
 const links = [
   {
-    link: routing.ROOT,
+    link: route.ROOT,
     label: 'Home',
   },
   {
-    link: routing.RECOGNIZER,
+    link: route.RECOGNIZER,
     label: 'Recognizer',
   },
   {
-    link: routing.FAQ,
+    link: route.FAQ,
     label: 'FAQ',
   },
 ];
