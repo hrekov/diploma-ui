@@ -1,0 +1,39 @@
+.note {
+  padding: 0.8rem var(--container-gap);
+}
+
+.title {
+  margin: 2rem auto 0 auto;
+}
+
+section {
+  margin: var(--container-gap);
+}
+
+/* Style the table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #F2F2F2;
+}
+
+/* Style the code blocks */
+pre {
+  background-color: #F2F2F2;
+  padding: 10px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+.endpointSection {
+  border-top: 1px solid var(--secondary-color);
+}
