@@ -18,17 +18,21 @@ function SearchResults({ data, className }: SearchResultsProps) {
         Recognition Result
       </caption>
 
-      <tr>
-        <th>Characteristic</th>
-        <th>Value</th>
-      </tr>
-
-      { data.map(row => (
+      <thead>
         <tr>
-          <td>{row.name}</td>
-          <td>{row.value}</td>
+          <th>Characteristic</th>
+          <th>Value</th>
         </tr>
-      ))}
+      </thead>
+
+      <tbody>
+        { data.map(row => (
+          <tr key={row.name}>
+            <td>{row.name}</td>
+            <td>{row.value}</td>
+          </tr>
+        ))}
+      </tbody>
     </table>
   );
 }
