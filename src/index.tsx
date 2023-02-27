@@ -1,12 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom/client';
+import reportWebVitals from './reportWebVitals';
 import './assets/scss/index.scss';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Root from './routes/Root';
+import Root from './routes/AppRoot';
 import Recognizer from './routes/Recognizer';
 import FAQ from './routes/FAQ';
 import APIPage from './routes/API';
 import { route } from './misc/constants';
+import Home from './routes/Home';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -17,6 +19,10 @@ const router = createBrowserRouter([
     path: '/',
     element: <Root />,
     children: [
+      {
+        path: route.ROOT,
+        element: <Home />,
+      },
       {
         path: route.RECOGNIZER,
         element: <Recognizer />,

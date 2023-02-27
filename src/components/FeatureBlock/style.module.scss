@@ -1,0 +1,22 @@
+.featureItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & .title {
+    text-align: center;
+    font-weight: normal;
+    font-size: 1rem;
+  }
+
+  & .icon {
+    width: 200px;
+    height: 200px;
+  }
+
+  & .description {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+  }
+}

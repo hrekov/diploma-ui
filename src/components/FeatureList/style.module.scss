@@ -1,0 +1,26 @@
+.featureList {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: space-between;
+  padding: 0 var(--container-gap);
+}
+
+.title {
+  text-align: center;
+  margin: 3rem auto 2rem auto;
+  text-transform: uppercase;
+  position: relative;
+  width: fit-content;
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 4px;
+    background-color: var(--accent-color);
+  }
+}

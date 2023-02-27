@@ -12,6 +12,7 @@
   padding: 0 15px;
   gap: 30px;
   min-width: var(--min-page-width);
+  z-index: 999;
 }
 
 .brand {
@@ -23,7 +24,7 @@
   text-decoration: none;
   color: var(--secondary-text-color);
 
-  .logoIcon {
+  & .logoIcon {
     height: 50px;
   }
 }
