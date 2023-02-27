@@ -5,6 +5,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from './routes/Root';
 import Recognizer from './routes/Recognizer';
 import FAQ from './routes/FAQ';
+import APIPage from './routes/API';
+import { route } from './misc/constants';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -16,11 +18,15 @@ const router = createBrowserRouter([
     element: <Root />,
     children: [
       {
-        path: '/recognizer',
+        path: route.RECOGNIZER,
         element: <Recognizer />,
       },
       {
-        path: '/faq',
+        path: route.API,
+        element: <APIPage />,
+      },
+      {
+        path: route.FAQ,
         element: <FAQ />,
       }
     ],

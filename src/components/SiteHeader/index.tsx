@@ -3,6 +3,7 @@ import css from './style.module.scss';
 import { Link, useLocation } from 'react-router-dom';
 import { route } from '../../misc/constants';
 import UserAvatar from '../UserAvatar';
+import LogoIcon from '../../assets/img/logo.svg';
 
 const links = [
   {
@@ -12,6 +13,10 @@ const links = [
   {
     link: route.RECOGNIZER,
     label: 'Recognizer',
+  },
+  {
+    link: route.API,
+    label: 'API Documentation',
   },
   {
     link: route.FAQ,
@@ -24,7 +29,18 @@ function SiteHeader() {
 
   return (
     <header className={css.header}>
-      <div className={css.brand}>Car Model Recognizer</div>
+      <Link
+        to={route.ROOT}
+        className={css.brand}
+      >
+        <img
+          src={LogoIcon}
+          alt="Logotype"
+          className={css.logoIcon}
+        />
+
+        Car Model Recognizer
+      </Link>
 
       <nav className={css.links}>
         {links.map(link => (

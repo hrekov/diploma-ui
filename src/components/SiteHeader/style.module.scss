@@ -11,16 +11,26 @@
   align-items: center;
   padding: 0 15px;
   gap: 30px;
+  min-width: var(--min-page-width);
 }
 
 .brand {
   font-weight: bold;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: var(--secondary-text-color);
+
+  .logoIcon {
+    height: 50px;
+  }
 }
 
 .links {
   display: flex;
-  gap: 10px;
+  gap: 18px;
 
   & a {
     text-decoration: none;
