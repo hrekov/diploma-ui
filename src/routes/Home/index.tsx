@@ -1,6 +1,7 @@
 import React from 'react';
 import BannerBlock from '../../components/BannerBlock';
 import FeatureList from '../../components/FeatureList';
+import HowItWorks from '../../components/HowItWorks';
 
 function Home() {
   return (
@@ -8,6 +9,8 @@ function Home() {
       <BannerBlock />
 
       <FeatureList />
+
+      <HowItWorks />
     </>
   );
 }

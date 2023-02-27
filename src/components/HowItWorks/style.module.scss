@@ -1,0 +1,32 @@
+.root {
+  margin-bottom: 3rem;
+  padding: 0 var(--container-gap);
+}
+
+.title {
+  margin: 3rem auto 2rem auto;
+}
+
+.contents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.aiImage {
+  width: 600px;
+  height: auto;
+}
+
+.blockTitle {
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+}
+
+.descriptionBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

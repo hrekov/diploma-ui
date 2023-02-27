@@ -4,11 +4,12 @@ import HighPerformanceIcon from '../../assets/img/high-performance.svg';
 import OpenSourceIcon from '../../assets/img/opensource.svg';
 import HighAccuracyIcon from '../../assets/img/high-accuracy.svg';
 import css from './style.module.scss';
+import SectionTitle from '../SectionTitle';
 
 function FeatureList() {
   return (
-    <section>
-      <h2 className={css.title}>Our Features</h2>
+    <section className={css.root}>
+      <SectionTitle title="Our service features" className={css.title} />
 
       <div className={css.featureList}>
         <FeatureBlock

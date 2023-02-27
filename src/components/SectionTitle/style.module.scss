@@ -1,0 +1,18 @@
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  width: fit-content;
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 4px;
+    background-color: var(--accent-color);
+  }
+}
