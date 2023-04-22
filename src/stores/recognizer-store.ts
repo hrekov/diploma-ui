@@ -1,6 +1,7 @@
 import { makeAutoObservable } from 'mobx';
 import config from "../config";
 import { CarInfoItem, RecognizedData } from '../misc/types';
+import { getFieldSource } from '../misc/funcs';
 
 class RecognizerStore {
   private _isFileProcessing = false;
@@ -20,7 +21,11 @@ class RecognizerStore {
       .entries(this._recognizedData)
       .slice(0, 5)
       .filter(([_, value]) => value !== null)
-      .map(([name, value]) => ({ name, value: value as unknown as string | number }));
+      .map(([name, value]) => ({
+        name,
+        value: value as unknown as string | number,
+        dataSource: getFieldSource(name),
+      }));
   }
 
   get dataTaskId(): string | null {

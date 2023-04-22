@@ -1,6 +1,7 @@
 import { makeAutoObservable } from "mobx";
 import { CarInfoItem, RecognizedData } from "../misc/types";
 import config from "../config";
+import { getFieldSource } from "../misc/funcs";
 
 class RecognizerResultsStore {
   private _searchResults: RecognizedData = null;
@@ -13,7 +14,11 @@ class RecognizerResultsStore {
     return Object
       .entries(this._searchResults)
       .filter(([_, value]) => value !== null)
-      .map(([name, value]) => ({ name, value: value as unknown as string | number }));
+      .map(([name, value]) => ({
+        name,
+        value: value as unknown as string | number,
+        dataSource: getFieldSource(name),
+      }));
   }
 
   constructor() {

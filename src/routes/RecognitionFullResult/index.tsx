@@ -36,7 +36,7 @@ function RecognitionFullResult() {
             <tr key={row.name}>
               <td>{row.name}</td>
               <td>{row.value}</td>
-              <td>DbPedia</td>
+              <td>{row.dataSource}</td>
             </tr>
           ))}
        </table>
