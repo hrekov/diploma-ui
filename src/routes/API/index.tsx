@@ -68,7 +68,7 @@ function APIPage() {
       </section>
 
       <section className={css.endpointSection}>
-        <h2>POST /api/v1/recognize</h2>
+        <h2>POST /api/v1/recognition</h2>
         <p>Returns a list of all users.</p>
         <h3>Example Request</h3>
         <pre>

@@ -1,0 +1,20 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table {
+  max-width: 700px;
+  margin: 2rem 0;
+}
+
+.note {
+  color: grey;
+  font-weight: lighter;
+  margin: 0.4rem 0;
+}
+
+.back_button {
+  margin-bottom: 2rem;
+}

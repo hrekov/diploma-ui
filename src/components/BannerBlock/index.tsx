@@ -10,7 +10,7 @@ function BannerBlock() {
       style={{ backgroundImage: `url(${BannerImage})` }}
     >
       <div className={css.texts}>
-        <h1 className={css.title}>The new ega of image recognition technology</h1>
+        <h1 className={css.title}>The new era of image recognition technology</h1>
 
         <p className={css.subtitle}>Our service provides free and powerful tool to recognize cars from images</p>
       </div>

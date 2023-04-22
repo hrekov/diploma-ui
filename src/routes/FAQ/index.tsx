@@ -1,10 +1,11 @@
 import React from 'react';
 import css from './style.module.scss';
+import SectionTitle from '../../components/SectionTitle';
 
 function FAQ() {
   return (
     <div className={css.container}>
-      <h1>Frequently Asked Questions</h1>
+      <SectionTitle className={css.title} title="Frequently Asked Questions" />
       <h2>How do I upload an image of my car to a website for recognition?</h2>
       <p>
         To upload an image of your car to a website for recognition, you'll typically need to click on a button or link that says something like "Upload Image" or "Choose File". This will open a dialog box that allows you to select the image file from your computer. After you've selected the file, click on the "Upload" or "Submit" button to upload the image to the website's server for recognition.

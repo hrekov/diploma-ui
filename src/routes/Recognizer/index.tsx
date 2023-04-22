@@ -1,17 +1,17 @@
 import React from 'react';
 import css from './style.module.scss';
 import { observer } from 'mobx-react-lite';
-import RecognizerStore from '../../stores/recognizer';
+import RecognizerStore from '../../stores/recognizer-store';
 import RecognitionForm from '../../components/RecognitionForm';
+import SectionTitle from '../../components/SectionTitle';
 import SearchResults from '../../components/SearchResults';
-import * as stub from '../../stub';
 
 function Recognizer() {
   const store = React.useMemo(() => new RecognizerStore(), []);
 
   return (
     <div className="container">
-      <h1 className={css.title}>Car model recognition service</h1>
+      <SectionTitle className={css.title} title="Car model recognition service" />
 
       <RecognitionForm
         className={css.recognitionForm}
@@ -20,7 +20,8 @@ function Recognizer() {
 
       <SearchResults
         className={css.searchResults}
-        data={stub.searchResults}
+        data={store.recognizedData}
+        dataTaskId={store.dataTaskId}
       />
     </div>
   );

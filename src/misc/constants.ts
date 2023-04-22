@@ -3,4 +3,5 @@ export const route = {
   RECOGNIZER: '/recognizer',
   API: '/apidoc',
   FAQ: '/faq',
+  FULL_RESULTS: '/recognizer/result/:id',
 }
